@@ -25,7 +25,10 @@ $ npm install -g graphql-introspection-json-to-sdl
 ```
 Download schema.json:
 ```shell script
-$ apollo service:download --endpoint=https://yourstore.myshopify.com/admin/api/2020-01/graphql.json --header="X-Shopify-Access-Token: <token>" graphql/shopify.json
+$ apollo service:download \
+--header="X-Shopify-Access-Token: <token>" \
+--endpoint=https://mystore.myshopify.com/admin/api/2022-01/graphql.json \
+graphql/shopify.json
 ```
 Convert schema.json to sdl:
 ```shell script
