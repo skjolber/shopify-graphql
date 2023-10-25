@@ -7,7 +7,7 @@
 
 	<groupId>com.voodoodyne.shopify</groupId>
 	<artifactId>shopify-graphql</artifactId>
-	<version>2023-10.0</version>
+	<version>2023-10.1-SNAPSHOT</version>
 
 	<name>Shopify Graphql Classes</name>
 	<description>Generated java classes for Shopify's Graphql Admin API</description>
@@ -16,7 +16,7 @@
 	<scm>
 		<url>scm:git:git@github.com:orbitkit/shopify-graphql</url>
 		<developerConnection>scm:git:git@github.com:orbitkit/shopify-graphql</developerConnection>
-		<tag>shopify-graphql-2023-10.0</tag>
+		<tag>HEAD</tag>
 	</scm>
 	<licenses>
 		<license>
