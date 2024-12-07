@@ -172,7 +172,7 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<graphqlSchemaPaths>${project.basedir}/src/main/resources/graphql/shopify.graphqls</graphqlSchemaPaths>
+							<graphqlSchemaPaths>${project.basedir}/graphql/shopify.graphqls</graphqlSchemaPaths>
 							<outputDir>${project.build.directory}/generated-sources/graphql</outputDir>
 							<packageName>io.github.kobylynskyi.bikeshop.graphql.model</packageName>
 							<customTypesMapping>
