@@ -105,10 +105,10 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<version>3.11.2</version>
-		        <configuration>
+				<configuration>
 					<source>21</source>
-		            <additionalJOption>-Xdoclint:none</additionalJOption>
-		        </configuration>				
+					<additionalJOption>-Xdoclint:none</additionalJOption>
+				</configuration>				
 				<executions>
 					<execution>
 						<goals>
@@ -163,25 +163,25 @@
 			</plugin>
 
 			<plugin>
-		        <groupId>io.github.kobylynskyi</groupId>
-		        <artifactId>graphql-codegen-maven-plugin</artifactId>
-		        <version>5.10.0</version>
+				<groupId>io.github.kobylynskyi</groupId>
+				<artifactId>graphql-codegen-maven-plugin</artifactId>
+				<version>5.10.0</version>
 				<executions>
 					<execution>
 						<goals>
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-	                        <graphqlSchemaPaths>${project.basedir}/src/main/resources/graphql/shopify.graphqls</graphqlSchemaPaths>
-	                        <outputDir>${project.build.directory}/generated-sources/graphql</outputDir>
-	                        <packageName>io.github.kobylynskyi.bikeshop.graphql.model</packageName>
-	                        <customTypesMapping>
-	                            <DateTime>java.util.Date</DateTime>
-	                        </customTypesMapping>
-	                        <addGeneratedAnnotation>false</addGeneratedAnnotation>
-	                        <modelNameSuffix>GQ</modelNameSuffix>
-	                        <!-- trust that shopify data is valid -->
-	                        <modelValidationAnnotation>jakarta.validation.constraints.NotNull</modelValidationAnnotation>
+							<graphqlSchemaPaths>${project.basedir}/src/main/resources/graphql/shopify.graphqls</graphqlSchemaPaths>
+							<outputDir>${project.build.directory}/generated-sources/graphql</outputDir>
+							<packageName>io.github.kobylynskyi.bikeshop.graphql.model</packageName>
+							<customTypesMapping>
+								<DateTime>java.util.Date</DateTime>
+							</customTypesMapping>
+							<addGeneratedAnnotation>false</addGeneratedAnnotation>
+							<modelNameSuffix>GQ</modelNameSuffix>
+							<!-- trust that shopify data is valid -->
+							<modelValidationAnnotation>jakarta.validation.constraints.NotNull</modelValidationAnnotation>
 							<generateToString>true</generateToString>
 							<generateEqualsAndHashCode>true</generateEqualsAndHashCode>
 						</configuration>
