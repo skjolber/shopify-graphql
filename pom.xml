@@ -182,7 +182,6 @@
 							</customTypesMapping>
 							<addGeneratedAnnotation>false</addGeneratedAnnotation>
 							<modelNameSuffix>GQ</modelNameSuffix>
-							<!-- trust that shopify data is valid -->
 							<modelValidationAnnotation>jakarta.validation.constraints.NotNull</modelValidationAnnotation>
 							<generateToString>true</generateToString>
 							<generateEqualsAndHashCode>true</generateEqualsAndHashCode>
