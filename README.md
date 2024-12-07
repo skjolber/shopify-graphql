@@ -20,6 +20,7 @@ We found three possible client libraries to generate this:
 
 Install apollo and the program that will convert json to sdl:
 ```shell script
+$ npm install -g graphql
 $ npm install -g apollo
 $ npm install -g graphql-introspection-json-to-sdl
 ```
